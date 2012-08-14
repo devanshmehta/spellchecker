@@ -18,12 +18,12 @@
   <target name="dist" depends="compile" description="creates jar files">
     <jar destfile="dist/corrector.jar" basedir="${build}">
       <manifest>
-	<attribute name="Main-Class" value="com.spellchecker.main.Main"/>
+	<attribute name="Main-Class" value="com.spellchecker.main.CorrectorMain"/>
       </manifest>
     </jar>
     <jar destfile="dist/randomizer.jar" basedir="${build}">
       <manifest>
-	<attribute name="Main-Class" value="com.spellchecker.main.Main2"/>
+	<attribute name="Main-Class" value="com.spellchecker.main.RandomizerMain"/>
       </manifest>
     </jar>
 

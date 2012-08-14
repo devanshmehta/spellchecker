@@ -12,7 +12,7 @@ import com.spellchecker.permutation.TwitchTVPermutor;
 //contain only word per line and also there should be only english
 //characters in the file. It should not include punctuation and similar
 //characters.
-public class Main2{
+public class RandomizerMain{
     
     public static void main(String[] args){
 	if(args.length < 1){

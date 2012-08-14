@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import com.spellchecker.dictionary.Dictionary;
 import com.spellchecker.corrector.*;
 
-public class Main{
+public class CorrectorMain{
 
     public static void main(String[] args){
 	if(args.length < 1){
@@ -16,8 +16,8 @@ public class Main{
 	String file = args[0];
 	try{
 	    Dictionary d = new Dictionary(file);
-	    Corrector c = new TwitchTVCorrector(d);
-	    //System.out.print(ENTER_LINE);
+	    Corrector c = new MyCorrector(d);
+	    System.out.print(ENTER_LINE);
 	    Scanner scanner =  new Scanner(System.in);
 	    while(scanner.hasNextLine()){
 		String word = scanner.nextLine();
@@ -30,7 +30,7 @@ public class Main{
 		}else{
 		    System.out.println(suggestions.toArray()[0]);
 		}
-		//System.out.print(ENTER_LINE);
+		System.out.print(ENTER_LINE);
 	    }
 	}catch(FileNotFoundException e){
 	    System.out.println("File Not Found: " + file);

@@ -9,9 +9,9 @@ import com.spellchecker.dictionary.Dictionary;
 
 //Corrector as outlined by in the question.
 //AUTHOR : Devansh Mehta
-public class TwitchTVCorrector extends Corrector{
+public class MyCorrector extends Corrector{
 
-    public TwitchTVCorrector(Dictionary dict){
+    public MyCorrector(Dictionary dict){
 	super(dict);
 	wordTransformer = new SimpleWordTransformer();
 	lowerCase = new LowerCasePermutation();
