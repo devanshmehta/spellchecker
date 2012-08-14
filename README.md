@@ -30,7 +30,7 @@ After running the ant file. There will be a dist directory created.
 
 You can run the corrector as a jar file
 
-java -jar Corrector.jar <dictionaryofwords>
+java -jar corrector.jar <dictionaryofwords>
 
 One sample dictionary of words is provided in the resource folder.
 
