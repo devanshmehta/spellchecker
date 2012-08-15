@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-import com.spellchecker.permutation.TwitchTVPermutor;
+import com.spellchecker.permutation.MyPermutor;
 
 //This main generates faulty words from good words and outputs it to 
 //the std out. The file passed as an argument to the program should 
@@ -34,7 +34,7 @@ public class RandomizerMain{
 		scanner.close();
 	    }
 	}
-	TwitchTVPermutor t = new TwitchTVPermutor();
+	MyPermutor t = new MyPermutor();
 	for(String goodWord : goodWords){
 	    for(String incorrectWord : t.getWordPermutation(goodWord)){
 		System.out.println(incorrectWord);

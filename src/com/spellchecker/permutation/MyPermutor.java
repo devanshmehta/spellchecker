@@ -3,11 +3,11 @@ package com.spellchecker.permutation;
 import java.util.List;
 import java.util.ArrayList;
 
-//This permutor does the opposite of the TwitchTVCorrector.
+//This permutor does the opposite of the MyCorrector.
 //AUTHOR : Devansh Mehta
-public class TwitchTVPermutor implements WordPermutation{
+public class MyPermutor implements WordPermutation{
 
-    public TwitchTVPermutor(){
+    public MyPermutor(){
 	upperCase = new UpperCasePermutation();
 	randomRepeated = new RandomRepeatedPermutation();
 	vowelPermutation = new VowelPermutation();
